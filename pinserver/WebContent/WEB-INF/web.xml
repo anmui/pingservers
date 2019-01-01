@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>pinserver</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>service.Login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/service/Login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>TaskServlet</servlet-name>
+    <servlet-class>service.TaskServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TaskServlet</servlet-name>
+    <url-pattern>/service/TaskServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Register</servlet-name>
+    <servlet-class>service.Register</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Register</servlet-name>
+    <url-pattern>/service/Register</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>MyInformation</servlet-name>
+    <servlet-class>service.MyInformation</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MyInformation</servlet-name>
+    <url-pattern>/service/MyInformation</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>MyInformationUpdate</servlet-name>
+    <servlet-class>service.MyInformationUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MyInformationUpdate</servlet-name>
+    <url-pattern>/service/MyInformationUpdate</url-pattern>
+  </servlet-mapping>
+
+   <servlet>
+    <servlet-name>Taskpublish</servlet-name>
+    <servlet-class>service.Taskpublish</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Taskpublish</servlet-name>
+    <url-pattern>/service/Taskpublish</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Join</servlet-name>
+    <servlet-class>service.Join</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Join</servlet-name>
+    <url-pattern>/service/Join</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>SearchServlet</servlet-name>
+    <servlet-class>service.SearchServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SearchServlet</servlet-name>
+    <url-pattern>/service/SearchServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+    <servlet-name>CommentWrite</servlet-name>
+    <servlet-class>service.CommentWrite</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CommentWrite</servlet-name>
+    <url-pattern>/service/CommentWrite</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+    <servlet-name>CommentDisplay</servlet-name>
+    <servlet-class>service.CommentDisplay</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CommentDisplay</servlet-name>
+    <url-pattern>/service/CommentDisplay</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+     <servlet>
+    <servlet-name>TaskServletPin</servlet-name>
+    <servlet-class>service.TaskServletPin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TaskServletPin</servlet-name>
+    <url-pattern>/service/TaskServletPin</url-pattern>
+  </servlet-mapping>
+  
+  
+     <servlet>
+    <servlet-name>GetMyPublishTask</servlet-name>
+    <servlet-class>service.GetMyPublishTask</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetMyPublishTask</servlet-name>
+    <url-pattern>/service/GetMyPublishTask</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
